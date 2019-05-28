@@ -1,0 +1,8 @@
+<label>Username</label>
+<!-- twoway bing is as simple as calling 'userName' with ngModel -->
+<input type='text' class='form-control' [(ngModel)]='userName'>
+<!-- Output text input from user -->
+<p>{{userName}}</p>
+<!-- button with onClick which resets input to empty  -->
+<button class='btn btn-primary' [disabled] ="userName === ''" (click)="userName = ''">Reset User</button>
+
